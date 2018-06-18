@@ -2,7 +2,7 @@
  * react-native-swiper
  * @author leecade<leecade@163.com>
  */
-import React from 'react'
+import React from 'react';
 import ReactNative, {
   StyleSheet,
   Text,
@@ -13,7 +13,9 @@ import ReactNative, {
   TouchableOpacity,
   ViewPagerAndroid,
   Platform
-} from 'react-native'
+} from 'react-native';
+import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class';
 
 // Using bare setTimeout, setInterval, setImmediate
 // and requestAnimationFrame calls is very dangerous
@@ -100,7 +102,7 @@ let styles = StyleSheet.create({
 
 // missing `module.exports = exports['default'];` with babel6
 // export default React.createClass({
-module.exports = React.createClass({
+module.exports = createReactClass({
 
   /**
    * Props Validation
